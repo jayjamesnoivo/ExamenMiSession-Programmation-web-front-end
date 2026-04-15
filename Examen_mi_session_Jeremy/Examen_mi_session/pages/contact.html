@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Examen mi-session</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="../index.html">
+        <img src="../images/logo.png" alt="Logo de l’entreprise" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Contact</h1>
+
+    <form class="form" action="#" method="post" enctype="multipart/form-data" novalidate>
+      <fieldset class="grid-2">
+        <legend>Vos informations</legend>
+
+        <div class="field">
+          <label for="nom" class="req">Nom</label>
+          <input id="nom" name="nom" type="text" required />
+        </div>
+
+        <div class="field">
+          <label for="prenom" class="req">Prénom</label>
+          <input id="prenom" name="prenom" type="text" required />
+        </div>
+
+        <div class="field">
+          <label for="email" class="req">Courriel</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="field">
+          <label for="pass" class="req">Mot de passe</label>
+          <input id="pass" name="pass" type="password" minlength="8" maxlength="12" required />
+        </div>
+
+        <div class="field">
+          <label for="cpass" class="req">Confirmer mot de passe</label>
+          <input id="cpass" name="cpass" type="password" minlength="8" maxlength="12" required />
+        </div>
+
+        <div class="field">
+          <label for="service">Service recherché</label>
+          <select id="service" name="service">
+            <option>Développement Web</option>
+            <option>Design Graphique</option>
+            <option>SEO</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Vous êtes</legend>
+        <div class="inline">
+          <label class="radio"><input type="radio" name="type_client" value="Particulier" checked /> Particulier</label>
+          <label class="radio"><input type="radio" name="type_client" value="Entreprise" /> Entreprise</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Quels services vous intéressent ?</legend>
+        <div class="inline">
+          <label class="check"><input type="checkbox" name="interets" value="Dev Web" /> Développement Web</label>
+          <label class="check"><input type="checkbox" name="interets" value="Design" /> Design Graphique</label>
+          <label class="check"><input type="checkbox" name="interets" value="SEO" /> SEO</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Pièce jointe</legend>
+        <div class="field">
+          <label for="fichier">Téléversement d’une image</label>
+          <input id="fichier" name="fichier" type="file" accept="image/*" />
+        </div>
+      </fieldset>
+
+      <div class="actions">
+        <button class="btn-primary" type="submit">Envoyer</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 — Examen mi-session (420-931-MA)</p>
+  </footer>
+</body>
+</html>
